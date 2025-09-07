@@ -2,46 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Coiny&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<main>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+<div class="container-card">
+  <div class="score-card">
+    <div class="myresult">
+    <h3>Your Result</h3>
+    <div class="circle-gradient">   
+      <div class="score-result">
+      <h1 id="main-score">76</h1>
+      <h3 class="font-size">of 100</h3> 
+      </div>
+    </div>
+    <h2>Great</h2>
+    <p class="font-size">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
   
-  Summary
+  <div class="summary-card">
+    <h3>Summary</h3>
+    <ul>
+      <li>Reaction 80 / 100</li>
+      <li>Memory 92 / 100</li>
+      <li>Verbal 61 / 100</li>
+      <li>Visual 73 / 100</li>
+    </ul>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <button>Continue</button>
   </div>
+  </div>
+
+
+</div>
+</main>
 </body>
 </html>
